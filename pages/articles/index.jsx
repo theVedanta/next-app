@@ -20,7 +20,7 @@ const articles = ({ articles }) => {
             <h1>Welcome to Articles</h1>
             <br />
             {articles.map((article) => (
-                <Link href={`/articles/${article.id}`}>
+                <Link href={`/articles/${article.id}`} key={article.id}>
                     <a className={styles.title}>{article.title}</a>
                 </Link>
             ))}
